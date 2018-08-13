@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/i_home"
+        android:checked="true"
+        android:icon="@mipmap/home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/i_dasboard"
+        android:icon="@mipmap/dashboard"
+        android:checked="false"
+        android:title="@string/dashboard" />
+    <!--must set the item title to empty-->
+    <item
+        android:id="@+id/i_post"
+        android:title="mk"
+        android:checked="false"
+        />
+    <item
+        android:id="@+id/i_Chats"
+        android:icon="@mipmap/chat"
+        android:title="@string/chat"
+        android:checked="false"
+        />
+    <item
+        android:id="@+id/i_Account"
+        android:icon="@mipmap/account"
+        android:title="@string/account"
+        android:checked="false"
+        />
+</menu>

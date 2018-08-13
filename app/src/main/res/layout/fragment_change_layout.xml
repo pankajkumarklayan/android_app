@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgound"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height">
+
+        <ImageButton
+            android:id="@+id/ib_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/backicon"
+            android:background="@null"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/change_password"
+            android:layout_toRightOf="@+id/ib_Back"
+            android:textColor="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edit_back"
+            android:hint="@string/old_password"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edit_back"
+            android:layout_marginTop="30dp"
+            android:hint="@string/new_password"
+            android:paddingLeft="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edit_back"
+            android:layout_marginTop="30dp"
+            android:hint="@string/confirm_password"
+            android:paddingLeft="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Save"
+            android:textColor="@color/colorWhite"
+            android:background="@mipmap/login"
+
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

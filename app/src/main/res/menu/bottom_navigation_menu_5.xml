@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/home"
+        android:icon="@mipmap/home" />
+
+    <item
+        android:title="@string/dashboard"
+        android:icon="@mipmap/dashboard" />
+
+    <item
+        android:title=""
+        android:icon="@mipmap/chat"
+        />
+
+    <item
+        android:title="@string/chat"
+        android:icon="@mipmap/chat" />
+
+    <item
+        android:title="@string/account"
+        android:icon="@mipmap/account" />
+
+</menu>

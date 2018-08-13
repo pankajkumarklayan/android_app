@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="#F6F6F6"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/chats"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/rounded_blue_edit_back"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tv_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buying"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/rounded_blue_edit_back"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tv_selling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selling"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/rounded_blue_edit_back"
+                />
+
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/mProgressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

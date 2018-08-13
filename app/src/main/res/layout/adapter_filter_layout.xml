@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/mLayout"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="10dp"
+
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:civ_border_color="@color/colorGray"
+            app:civ_border_width="2dp"
+            android:src="@mipmap/rectangle_logo"
+            android:layout_gravity="center"
+            />
+       <!-- <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/logo"
+            android:layout_gravity="center"
+            />-->
+        <CheckBox
+            android:id="@+id/mChecked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:alpha=".0"
+            />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Mith"
+        android:gravity="center"
+        android:maxLines="2"
+        />
+</LinearLayout>

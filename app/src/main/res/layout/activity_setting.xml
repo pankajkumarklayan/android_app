@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kalshee.SettingActivity"
+    android:id="@+id/mContainer"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        >
+    <RelativeLayout
+        android:id="@+id/mTool_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentTop="true"
+        android:background="#F6F6F6">
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@mipmap/blue_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ibBack"
+            android:text="@string/setting"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/account"
+                android:textAllCaps="true"
+                android:textColor="#90000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_ProfileName"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Mith"
+                    android:inputType="textCapCharacters"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:enabled="false"
+                    android:textColor="#90000000"
+                    />
+                <TextView
+                    android:id="@+id/tv_edit"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="20dp"
+                    android:text="@string/edit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    />
+                <TextView
+                    android:id="@+id/tv_done"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="20dp"
+                    android:text="@string/done"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Password"
+                    android:textAllCaps="true"
+                    android:textColor="#90000000" />
+
+                <TextView
+                    android:id="@+id/tv_editPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="20dp"
+                    android:text="@string/edit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/other"
+                android:textAllCaps="true"
+                android:textColor="#90000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/help"
+                android:textColor="#90000000"
+                android:drawableRight="@mipmap/left_arrow"
+                android:paddingRight="20dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/about_klshee"
+                android:textColor="#90000000"
+                android:drawableRight="@mipmap/left_arrow"
+                android:paddingRight="20dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/tv_ContactUs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/contact_us"
+                android:textColor="#90000000"
+                android:drawableRight="@mipmap/left_arrow"
+                android:paddingRight="20dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/terms_of_services"
+                android:textColor="#90000000"
+                android:drawableRight="@mipmap/left_arrow"
+                android:paddingRight="20dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/privacy_policy"
+                android:textColor="#90000000"
+                android:drawableRight="@mipmap/left_arrow"
+                android:paddingRight="20dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/tv_LogOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/border_blue_edit_back"
+                android:padding="12dp"
+                android:text="@string/log_out"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</FrameLayout>
+

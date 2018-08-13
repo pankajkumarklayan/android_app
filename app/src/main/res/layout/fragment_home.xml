@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="@dimen/header_h"
+        android:background="#F6F6F6"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_Search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edit_blue_back"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:hint="@string/klshee"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_weight=".5"
+            android:background="@drawable/edit_blue_back">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/mSpinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:background="@null">
+
+
+            </android.support.v7.widget.AppCompatSpinner>
+
+            <ImageButton
+                android:id="@+id/mShow_spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".5"
+                android:background="@null"
+                android:src="@mipmap/dropdown" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_weight=".5">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:src="@mipmap/language"
+                android:text="@string/city"
+                android:textColor="@color/colorWhite" />
+
+            <ImageButton
+                android:id="@+id/Ib_Filter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@mipmap/filter" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_noProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nothing_here_match_you_search"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

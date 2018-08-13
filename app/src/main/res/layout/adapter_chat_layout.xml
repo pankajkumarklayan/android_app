@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/id_mLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_SenderPic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/blue_cars"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/iv_SenderPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_Left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mith"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@color/colorAccent"
+                android:textColor="#fff"
+                android:visibility="visible"
+                android:layout_marginTop="8dp"
+                />
+            <TextView
+                android:id="@+id/tv_senderTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Am"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/id_RightLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/id_mLeft"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_receiver"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/blue_cars"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_receiver"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mith"
+                android:gravity="center"
+                android:maxLines="5"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_Left"
+                android:background="@color/colorGray"
+                android:textColor="#000"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                />
+            <TextView
+                android:id="@+id/tv_ReceiverTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Am sfdrwefrefrefre"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
